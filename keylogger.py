@@ -7,7 +7,7 @@ from pynput.keyboard import Listener
 
 
 def validDir(dir):
-    if dir[-1] != "/":  # adds '/' to the end of the directory if it's not already there TEST WITH \ LATER
+    if dir[-1] != "/":  # adds '/' to the end of the directory if it's not already there
         dir += "/"
     if exists(dir + "log.txt"):
         response = input("File already exists! Are you sure you would like to overwrite it? Y or N ")
